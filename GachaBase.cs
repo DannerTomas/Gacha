@@ -28,7 +28,7 @@
         public uint _GACHA_RAISE_RATE = 600; // 6% in 10000
         public uint _GACHA_ALL_RATE = 10000;
 
-        //If next time we get Up roles.
+        //If next time will we get Up roles.
         public bool _FORCE_TARGET = false;
 
         public Random _RANDOM = new();
