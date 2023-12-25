@@ -1,4 +1,4 @@
-﻿namespace GachaSystem
+﻿namespace GachaSystem.Base
 {
     public class GachaBase
     {
@@ -54,7 +54,7 @@
 
             for (int count = 0; count < 10; count++)
             {
-                result[count] = this.DoGacha();
+                result[count] = DoGacha();
             }
 
             return result;

@@ -1,4 +1,6 @@
-﻿namespace GachaSystem.Genshin
+﻿using GachaSystem.Base;
+
+namespace GachaSystem.Genshin
 {
     public class Gacha : GachaBase
     {
