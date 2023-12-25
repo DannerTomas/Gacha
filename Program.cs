@@ -10,6 +10,11 @@ int gachaType = 1;
 try
 {
     gachaType = int.Parse(type);
+    if (gachaType <= 0 || gachaType > 1)
+    {
+        Console.WriteLine("该卡池不存在，请重试。");
+        goto SELECT;
+    }
 }
 catch
 {
@@ -48,9 +53,9 @@ catch
     goto MAIN;
 }
 
-for(int count = 0; count < time ; count++)
+for (int count = 0; count < time; count++)
 {
-    var result = gacha.DoGacha(gachaPool : gachaType);
+    var result = gacha.DoGacha(gachaPool: gachaType);
 
     if (result.StartsWith("★★★:"))
     {
@@ -64,7 +69,7 @@ for(int count = 0; count < time ; count++)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
     }
-    
+
     Console.WriteLine(result);
     Console.ForegroundColor = ConsoleColor.Gray;
 }
