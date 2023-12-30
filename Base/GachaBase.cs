@@ -33,11 +33,6 @@
 
         public Random _RANDOM = new();
 
-        public GachaBase(uint gachaTime = 90, uint gachaRaiseTime = 73)
-        {
-
-        }
-
         public virtual void Clear(bool isForceTarget = false)
         {
 

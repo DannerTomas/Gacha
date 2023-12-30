@@ -10,7 +10,7 @@ int gachaType = 1;
 try
 {
     gachaType = int.Parse(type);
-    if (gachaType <= 0 || gachaType > 1)
+    if (gachaType <= 0 || gachaType > 2)
     {
         Console.WriteLine("该卡池不存在，请重试。");
         goto SELECT;

@@ -56,6 +56,12 @@ namespace GachaSystem.Genshin
                 _GACHA_TOP_RATE += _GACHA_RAISE_RATE;
             }
 
+            if(_CURRENT_GACHA_TIME == _GACHA_TIME)
+            {
+                //Force get up roles
+                _GACHA_TOP_RATE = _GACHA_ALL_RATE;
+            }
+
             if (count < _GACHA_TOP_RATE)
             {
                 //Get 5-star role
